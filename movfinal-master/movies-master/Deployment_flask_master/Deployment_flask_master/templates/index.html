@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>IMDB Predictor</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ 
+ <div class="login">
+ <center>
+<h2> Select a genre for the movie</h2>
+<select class="inp" id="dynamic_select" onchange="location=this.value;">
+    <option value="" selected class="inp">Genre</option>
+    <option value="/act" class="inp">Action</option>
+    <option value="/adv" class="inp">Adventure</option>
+    <option value="/com" class="inp">Comedy</option>
+    <option value="/rom" class="inp">Romantic</option>
+   
+    
+</select>
+</center>
+ </div>
+
+</body>
+
+
+</html>
